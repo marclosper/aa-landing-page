@@ -9,7 +9,7 @@ jQuery(document).ready(function(){
 
   $('img.sppb-img-responsive').each(function() {
     let fullSrc = $(this).attr('src');
-    let shortSrc = fullSrc.replace(/^.*\/images/, '/images');
+    let shortSrc = fullSrc.replace(/^.*\/images/, 'assets');
     $(this).attr('src', shortSrc);
   });
 
