@@ -1,0 +1,277 @@
+/* Exact Button Matching Based on Live Site Inspection */
+/* https://www.angeladoptioninc.com/landing/moms-adoption-variant-dark/ */
+
+/* CSS Variables from live site inspection */
+:root {
+    --live-pink: #ff6c77;
+    --live-pink-hover: #2c3e50;
+    --live-white: #ffffff;
+    --live-dark: #2c3e50;
+    --live-font: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* COMPLETE RESET - Remove all existing button styles */
+.sppb-btn,
+.sppb-btn-custom,
+[id*="btn-"] {
+    all: unset !important;
+    display: inline-block !important;
+    cursor: pointer !important;
+    text-decoration: none !important;
+    box-sizing: border-box !important;
+    font-family: var(--live-font) !important;
+    text-align: center !important;
+    vertical-align: middle !important;
+    user-select: none !important;
+    transition: all 0.3s ease !important;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important;
+}
+
+/* HEADER BUTTON - "Birth Mothers: Learn About Our Support" */
+/* Based on live site: Pink background, white text, rounded */
+#sppb-addon-983a96ec-73ff-4398-9c2e-dd79a7f3c59e #btn-983a96ec-73ff-4398-9c2e-dd79a7f3c59e.sppb-btn-custom {
+    background-color: transparent !important;
+    color: var(--live-white) !important;
+    font-family: var(--live-font) !important;
+    font-weight: 400 !important;
+    font-size: 20px !important;
+    line-height: 1.125em !important;
+    padding: 14px 24px !important;
+    border: none !important;
+    border-radius: 10px !important;
+    box-shadow: 0px 12px 9.17px 0px rgba(232, 180, 184, 0.4) !important;
+    text-transform: capitalize !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    border: 1px solid #E8B4B8 !important;
+}
+
+#sppb-addon-983a96ec-73ff-4398-9c2e-dd79a7f3c59e #btn-983a96ec-73ff-4398-9c2e-dd79a7f3c59e.sppb-btn-custom:hover {
+    background-color: var(--live-pink-hover) !important;
+    color: var(--live-white) !important;
+    transition: all 0.3s ease !important;
+}
+
+#sppb-addon-983a96ec-73ff-4398-9c2e-dd79a7f3c59e #btn-983a96ec-73ff-4398-9c2e-dd79a7f3c59e.sppb-btn-custom:focus {
+    background-color: var(--live-pink-hover) !important;
+    color: var(--live-white) !important;
+    outline: none !important;
+}
+
+/* CTA BUTTONS - "Start Your Adoption Application" */
+/* Based on live site: Pink background, white text, rounded */
+#sppb-addon-2683933c-a340-46c6-b0bc-3d037bdc2012 #btn-2683933c-a340-46c6-b0bc-3d037bdc2012.sppb-btn-custom,
+#sppb-addon-1c496b82-a82b-4590-8451-c566b9248c75 #btn-1c496b82-a82b-4590-8451-c566b9248c75.sppb-btn-custom,
+#sppb-addon-687d7495-02fd-48bb-8b57-2bb1b9aaae98 #btn-687d7495-02fd-48bb-8b57-2bb1b9aaae98.sppb-btn-custom,
+#sppb-addon-03aa1658-6929-406b-af4d-05903c00d4b9 #btn-03aa1658-6929-406b-af4d-05903c00d4b9.sppb-btn-custom,
+#sppb-addon-6d8b9187-a80f-4e78-ab47-373ffc4dac75 #btn-6d8b9187-a80f-4e78-ab47-373ffc4dac75.sppb-btn-custom,
+#sppb-addon-47d35776-c075-45c8-a958-97d5e60eddfb #btn-47d35776-c075-45c8-a958-97d5e60eddfb.sppb-btn-custom,
+#sppb-addon-f8b6c06b-46e7-4413-ad13-6923c98183a1 #btn-f8b6c06b-46e7-4413-ad13-6923c98183a1.sppb-btn-custom {
+    background-color: var(--live-pink) !important;
+    color: var(--live-white) !important;
+    font-family: var(--live-font) !important;
+    font-weight: 500 !important;
+    font-size: 24px !important;
+    line-height: 1.125em !important;
+    padding: 20px 60px !important;
+    border: none !important;
+    border-radius: 10px !important;
+    box-shadow: 0px 12px 9.17px 0px rgba(232, 180, 184, 0.4) !important;
+    text-transform: capitalize !important;
+    text-align: center !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+}
+
+#sppb-addon-2683933c-a340-46c6-b0bc-3d037bdc2012 #btn-2683933c-a340-46c6-b0bc-3d037bdc2012.sppb-btn-custom:hover,
+#sppb-addon-1c496b82-a82b-4590-8451-c566b9248c75 #btn-1c496b82-a82b-4590-8451-c566b9248c75.sppb-btn-custom:hover,
+#sppb-addon-687d7495-02fd-48bb-8b57-2bb1b9aaae98 #btn-687d7495-02fd-48bb-8b57-2bb1b9aaae98.sppb-btn-custom:hover,
+#sppb-addon-03aa1658-6929-406b-af4d-05903c00d4b9 #btn-03aa1658-6929-406b-af4d-05903c00d4b9.sppb-btn-custom:hover,
+#sppb-addon-6d8b9187-a80f-4e78-ab47-373ffc4dac75 #btn-6d8b9187-a80f-4e78-ab47-373ffc4dac75.sppb-btn-custom:hover,
+#sppb-addon-47d35776-c075-45c8-a958-97d5e60eddfb #btn-47d35776-c075-45c8-a958-97d5e60eddfb.sppb-btn-custom:hover,
+#sppb-addon-f8b6c06b-46e7-4413-ad13-6923c98183a1 #btn-f8b6c06b-46e7-4413-ad13-6923c98183a1.sppb-btn-custom:hover {
+    background-color: var(--live-pink-hover) !important;
+    color: var(--live-white) !important;
+    transition: all 0.3s ease !important;
+}
+
+#sppb-addon-2683933c-a340-46c6-b0bc-3d037bdc2012 #btn-2683933c-a340-46c6-b0bc-3d037bdc2012.sppb-btn-custom:focus,
+#sppb-addon-1c496b82-a82b-4590-8451-c566b9248c75 #btn-1c496b82-a82b-4590-8451-c566b9248c75.sppb-btn-custom:focus,
+#sppb-addon-687d7495-02fd-48bb-8b57-2bb1b9aaae98 #btn-687d7495-02fd-48bb-8b57-2bb1b9aaae98.sppb-btn-custom:focus,
+#sppb-addon-03aa1658-6929-406b-af4d-05903c00d4b9 #btn-03aa1658-6929-406b-af4d-05903c00d4b9.sppb-btn-custom:focus,
+#sppb-addon-6d8b9187-a80f-4e78-ab47-373ffc4dac75 #btn-6d8b9187-a80f-4e78-ab47-373ffc4dac75.sppb-btn-custom:focus,
+#sppb-addon-47d35776-c075-45c8-a958-97d5e60eddfb #btn-47d35776-c075-45c8-a958-97d5e60eddfb.sppb-btn-custom:focus,
+#sppb-addon-f8b6c06b-46e7-4413-ad13-6923c98183a1 #btn-f8b6c06b-46e7-4413-ad13-6923c98183a1.sppb-btn-custom:focus {
+    background-color: var(--live-pink-hover) !important;
+    color: var(--live-white) !important;
+    outline: none !important;
+}/* FOOTER C
+ONTACT BUTTON - "(877) 264-3555" */
+/* Based on live site: Pink background, white text, rounded */
+#sppb-addon-1734945626104 #btn-1734945626104.sppb-btn-custom {
+    background-color: var(--live-pink) !important;
+    color: var(--live-white) !important;
+    font-family: var(--live-font) !important;
+    font-weight: 400 !important;
+    font-size: 18px !important;
+    line-height: 1.125em !important;
+    padding: 20px 42px !important;
+    border: none !important;
+    border-radius: 10px !important;
+    box-shadow: 0px 12px 9.17px 0px rgba(232, 180, 184, 0.4) !important;
+    text-transform: capitalize !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+}
+
+#sppb-addon-1734945626104 #btn-1734945626104.sppb-btn-custom:hover {
+    background-color: var(--live-pink-hover) !important;
+    color: var(--live-white) !important;
+    transition: all 0.3s ease !important;
+}
+
+#sppb-addon-1734945626104 #btn-1734945626104.sppb-btn-custom:focus {
+    background-color: var(--live-pink-hover) !important;
+    color: var(--live-white) !important;
+    outline: none !important;
+}
+
+/* FORM SUBMIT BUTTON */
+.zcwf_button,
+input[type="submit"] {
+    background-color: var(--live-pink) !important;
+    color: var(--live-white) !important;
+    font-family: var(--live-font) !important;
+    font-weight: 500 !important;
+    font-size: 18px !important;
+    line-height: 1.125em !important;
+    padding: 20px 42px !important;
+    border: none !important;
+    border-radius: 10px !important;
+    box-shadow: 0px 12px 9.17px 0px rgba(232, 180, 184, 0.4) !important;
+    text-transform: capitalize !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important;
+}
+
+.zcwf_button:hover,
+input[type="submit"]:hover {
+    background-color: var(--live-pink-hover) !important;
+    color: var(--live-white) !important;
+}
+
+.zcwf_button:focus,
+input[type="submit"]:focus {
+    background-color: var(--live-pink-hover) !important;
+    color: var(--live-white) !important;
+    outline: none !important;
+}
+
+/* FORM RESET BUTTON */
+input[type="reset"] {
+    background-color: transparent !important;
+    color: var(--live-pink) !important;
+    border: 2px solid var(--live-pink) !important;
+    font-family: var(--live-font) !important;
+    font-weight: 400 !important;
+    font-size: 18px !important;
+    line-height: 1.125em !important;
+    padding: 18px 40px !important;
+    border-radius: 10px !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
+    text-transform: capitalize !important;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important;
+}
+
+input[type="reset"]:hover {
+    background-color: var(--live-pink) !important;
+    color: var(--live-white) !important;
+    border-color: var(--live-pink) !important;
+}
+
+input[type="reset"]:focus {
+    background-color: var(--live-pink) !important;
+    color: var(--live-white) !important;
+    border-color: var(--live-pink) !important;
+    outline: none !important;
+}
+
+/* MOBILE RESPONSIVE - Based on live site behavior */
+@media (max-width: 767px) {
+    /* Header button mobile */
+    #sppb-addon-983a96ec-73ff-4398-9c2e-dd79a7f3c59e #btn-983a96ec-73ff-4398-9c2e-dd79a7f3c59e.sppb-btn-custom {
+        font-size: 18px !important;
+        padding: 16px 32px !important;
+    }
+    
+    /* CTA buttons mobile */
+    #sppb-addon-2683933c-a340-46c6-b0bc-3d037bdc2012 #btn-2683933c-a340-46c6-b0bc-3d037bdc2012.sppb-btn-custom,
+    #sppb-addon-1c496b82-a82b-4590-8451-c566b9248c75 #btn-1c496b82-a82b-4590-8451-c566b9248c75.sppb-btn-custom,
+    #sppb-addon-687d7495-02fd-48bb-8b57-2bb1b9aaae98 #btn-687d7495-02fd-48bb-8b57-2bb1b9aaae98.sppb-btn-custom,
+    #sppb-addon-03aa1658-6929-406b-af4d-05903c00d4b9 #btn-03aa1658-6929-406b-af4d-05903c00d4b9.sppb-btn-custom,
+    #sppb-addon-6d8b9187-a80f-4e78-ab47-373ffc4dac75 #btn-6d8b9187-a80f-4e78-ab47-373ffc4dac75.sppb-btn-custom,
+    #sppb-addon-47d35776-c075-45c8-a958-97d5e60eddfb #btn-47d35776-c075-45c8-a958-97d5e60eddfb.sppb-btn-custom,
+    #sppb-addon-f8b6c06b-46e7-4413-ad13-6923c98183a1 #btn-f8b6c06b-46e7-4413-ad13-6923c98183a1.sppb-btn-custom {
+        font-size: 20px !important;
+        padding: 18px 48px !important;
+    }
+    
+    /* Footer button mobile */
+    #sppb-addon-1734945626104 #btn-1734945626104.sppb-btn-custom {
+        font-size: 16px !important;
+        padding: 16px 32px !important;
+    }
+    
+    /* Form buttons mobile */
+    .zcwf_button,
+    input[type="submit"] {
+        font-size: 16px !important;
+        padding: 16px 32px !important;
+    }
+    
+    input[type="reset"] {
+        font-size: 16px !important;
+        padding: 14px 30px !important;
+    }
+}
+
+/* ENSURE BUTTON TEXT INHERITS STYLES */
+.sppb-btn span,
+.sppb-btn-custom span,
+[id*="btn-"] span {
+    font-family: inherit !important;
+    font-weight: inherit !important;
+    font-size: inherit !important;
+    color: inherit !important;
+    line-height: inherit !important;
+}
+
+/* REMOVE ANY CONFLICTING STYLES */
+.sppb-button-wrapper {
+    display: inline-block !important;
+}
+
+.sppb-button-wrapper .sppb-btn {
+    margin: 0 !important;
+}
+
+/* ENSURE PROPER LINK BEHAVIOR */
+a.sppb-btn,
+a.sppb-btn-custom,
+a[id*="btn-"] {
+    text-decoration: none !important;
+}
+
+a.sppb-btn:visited,
+a.sppb-btn-custom:visited,
+a[id*="btn-"]:visited {
+    color: inherit !important;
+}
+a#btn-983a96ec-73ff-4398-9c2e-dd79a7f3c59e {
+    background-color: transparent !important;
+}
