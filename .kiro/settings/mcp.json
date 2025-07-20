@@ -1,0 +1,48 @@
+{
+  "mcpServers": {
+    "playwright": {
+      "command": "npx",
+      "args": [
+        "@playwright/mcp@latest"
+      ]
+    },
+    "filesystem": {
+      "command": "uvx",
+      "args": [
+        "mcp-server-filesystem",
+        "--",
+        "/Users/marclosper"
+      ],
+      "disabled": false,
+      "autoApprove": []
+    },
+    "sqlite": {
+      "command": "uvx",
+      "args": [
+        "mcp-server-sqlite",
+        "--",
+        "--db-path",
+        "/tmp/example.db"
+      ],
+      "disabled": false,
+      "autoApprove": []
+    },
+    "brave-search": {
+      "command": "uvx",
+      "args": [
+        "mcp-server-brave-search"
+      ],
+      "disabled": false,
+      "autoApprove": []
+    },
+    "fetch": {
+      "command": "uvx",
+      "args": [
+        "mcp-server-fetch"
+      ],
+      "disabled": false,
+      "autoApprove": []
+    },
+    
+  }
+}
