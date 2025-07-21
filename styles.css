@@ -128,7 +128,9 @@ only screen and (min-resolution:2dppx) {
         display: inline-block;
     }
 }
-
+html {
+  scroll-behavior: smooth;
+}
 .btn {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
