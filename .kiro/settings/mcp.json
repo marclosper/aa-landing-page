@@ -4,13 +4,16 @@
       "command": "npx",
       "args": [
         "@playwright/mcp@latest"
+      ],
+      "disabled": false,
+      "autoApprove": [
+        "browser_take_screenshot"
       ]
     },
     "filesystem": {
       "command": "uvx",
       "args": [
-        "mcp-server-filesystem",
-        "--",
+        "@modelcontextprotocol/server-filesystem",
         "/Users/marclosper"
       ],
       "disabled": false,
@@ -35,14 +38,13 @@
       "disabled": false,
       "autoApprove": []
     },
-    "fetch": {
+    "web-search": {
       "command": "uvx",
       "args": [
-        "mcp-server-fetch"
+        "mcp-server-web-search"
       ],
       "disabled": false,
       "autoApprove": []
-    },
-    
+    }
   }
 }

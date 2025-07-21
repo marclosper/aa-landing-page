@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Take the next step toward motherhood. Angel Adoption guides you through every stage of private adoption with compassionate, experienced support.">
+    <title>Your Time to Become a Mom | Angel Adoption</title>
+    
+    <!-- Performance Optimizations -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="optimized-styles.css" as="style">
+    <link rel="preload" href="assets/logo-small-1.png" as="image">
+    <link rel="preload" href="assets/moms-adoption-variant-dark-banner.png" as="image">
+    
+    <!-- Critical CSS - Inlined for fastest loading -->
+    <style>
+        :root {
+            --primary-pink: #ff6c77;
+            --primary-hover: #2c3e50;
+            --text-light: #fff;
+            --text-dark: #2c3e50;
+            --font-primary: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            --font-heading: 'Oswald', sans-serif;
+        }
+        
+        * { box-sizing: border-box; }
+        
+        body {
+            font-family: var(--font-primary);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: var(--text-dark);
+        }
+        
+        .header {
+            background: #fff;
+            position: sticky;
+            top: 0;
+            z-index: 9999;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+            padding: 15px 0;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .brand img {
+            max-width: 186px;
+            height: auto;
+        }
+        
+        .main-banner {
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: var(--text-light);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            position: relative;
+        }
+        
+        .banner-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+            width: 100%;
+        }
+        
+        .banner-text h1 {
+            font-family: var(--font-heading);
+            font-size: 3.5rem;
+            line-height: 1.2;
+            margin: 0 0 30px 0;
+            font-weight: 400;
+        }
+        
+        .banner-text h1 span {
+            color: var(--primary-pink);
+            font-family: 'Sacramento', cursive;
+            font-size: 0.8em;
+            display: block;
+            margin-top: 10px;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin: 40px 0;
+        }
+        
+        .stat-item {
+            text-align: center;
+        }
+        
+        .stat-item img {
+            width: 80px;
+            height: auto;
+            margin-bottom: 15px;
+        }
+        
+        .stat-item h3 {
+            font-size: 2.5rem;
+            margin: 10px 0;
+            color: var(--primary-pink);
+        }
+        
+        .btn {
+            display: inline-block;
+            background: var(--primary-pink);
+            color: var(--text-light);
+            padding: 20px 60px;
+            border: none;
+            border-radius: 10px;
+            font-size: 24px;
+            font-weight: 500;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 12px 9px rgba(232, 180, 184, 0.4);
+        }
+        
+        .btn:hover {
+            background: var(--primary-hover);
+            transform: translateY(-2px);
+        }
+        
+        .btn-header {
+            background: transparent;
+            border: 1px solid #e8b4b8;
+            font-size: 20px;
+            padding: 14px 24px;
+        }
+        
+        .banner-images {
+            position: relative;
+        }
+        
+        .banner-images img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 15px;
+        }
+        
+        @media (max-width: 768px) {
+            .banner-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            
+            .banner-text h1 {
+                font-size: 2.5rem;
+            }
+            
+            .stats-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .btn {
+                font-size: 20px;
+                padding: 18px 48px;
+            }
+            
+            .header-content {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+    </style>
+    
+    <!-- Favicon -->
+    <link href="https://www.angeladoptioninc.com/templates/angel/favicon.ico" rel="icon" type="image/vnd.microsoft.icon">
+    
+    <!-- Defer non-critical CSS -->
+    <link rel="preload" href="optimized-styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="optimized-styles.css"></noscript>
+    
+    <!-- Font loading optimization -->
+    <link rel="preload" href="https://fonts.gstatic.com/s/opensans/v43/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4gaVc.ttf" as="font" type="font/truetype" crossorigin>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="brand">
+                    <a href="https://www.angeladoptioninc.com/">
+                        <img src="assets/logo-small-1.png" alt="Angel Adoption Logo" width="167" height="78">
+                    </a>
+                </div>
+                <div class="header-cta">
+                    <a href="https://www.angeladoptioninc.com/place-baby-for-adoption/" class="btn btn-header">
+                        Birth Mothers: <span>Learn About Our Support</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Banner -->
+    <section class="main-banner">
+        <div class="container">
+            <div class="banner-content">
+                <div class="banner-text">
+                    <h1>
+                        Ready to Complete Your Family? Your Adoption Journey
+                        <span>Begins Here</span>
+                    </h1>
+                    
+                    <!-- Statistics -->
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <img src="assets/pink_adop_icn.png" alt="Families Created" loading="lazy" width="80" height="67">
+                            <h3>2,800+</h3>
+                            <p>Families Created Through<br>Ethical Adoption</p>
+                        </div>
+                        <div class="stat-item">
+                            <img src="assets/pink_heart_icn.png" alt="Years of Experience" loading="lazy" width="69" height="73">
+                            <h3>27</h3>
+                            <p>Years of Experience</p>
+                        </div>
+                        <div class="stat-item">
+                            <img src="assets/pink_phone_icn.png" alt="Expert Partners" loading="lazy" width="71" height="66">
+                            <h3>100+</h3>
+                            <p>Expert Partners</p>
+                        </div>
+                    </div>
+                    
+                    <a href="#adoption-form" class="btn">Start Your Adoption Application</a>
+                </div>
+                
+                <div class="banner-images">
+                    <img src="assets/moms-adoption-variant-dark-banner.png" alt="Happy adoptive families" loading="eager" width="703" height="647">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trusted Partners -->
+    <section class="partners-section">
+        <div class="container">
+            <h2>Trusted Partners</h2>
+            <div class="partners-grid">
+                <img src="assets/partners-logo-1-moms-adoption-variant-dark.png" alt="Partner 1" loading="lazy">
+                <img src="assets/partners-logo-2-moms-adoption-variant-dark.png" alt="Partner 2" loading="lazy">
+                <img src="assets/partners-logo-3-moms-adoption-variant-dark.png" alt="Partner 3" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="video-section">
+        <div class="container">
+            <h2>Watch How We Create Families</h2>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/your-video-id" 
+                        title="Angel Adoption Success Stories" 
+                        loading="lazy"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
+                </iframe>
+            </div>
+            
+            <div class="process-features">
+                <div class="feature-item">
+                    <img src="assets/proven-process-moms-adoption-variant-dark.png" alt="Proven Process" loading="lazy">
+                    <h3>Proven Process</h3>
+                    <p>We guide you step by step.</p>
+                </div>
+                <div class="feature-item">
+                    <img src="assets/support-team-moms-adoption-variant-dark.png" alt="Support Team" loading="lazy">
+                    <h3>Support Team</h3>
+                    <p>Meet our caring professionals</p>
+                </div>
+                <div class="feature-item">
+                    <img src="assets/success-stories-moms-adoption-variant-dark.png" alt="Success Stories" loading="lazy">
+                    <h3>Success Stories</h3>
+                    <p>Hear from adoptive families</p>
+                </div>
+            </div>
+            
+            <a href="#adoption-form" class="btn">Start Your Adoption Application</a>
+        </div>
+    </section>
+
+    <!-- Journey Guidance -->
+    <section class="journey-section">
+        <div class="container">
+            <h2>Your Adoption Journey<br>Expertly Guided</h2>
+            <p class="section-subtitle">Professional support at every step.</p>
+            
+            <div class="guidance-grid">
+                <div class="guidance-item">
+                    <img src="assets/complete-emotional-support-moms-adoption-variant-dark.png" alt="Emotional Support" loading="lazy">
+                    <h3>Complete Emotional<br>Support</h3>
+                    <ul>
+                        <li>Dedicated adoption coordinator</li>
+                        <li>Professional therapy included (BetterHelp)</li>
+                        <li>Experienced team support</li>
+                    </ul>
+                </div>
+                
+                <div class="guidance-item">
+                    <img src="assets/journey-guidance-moms-adoption-variant-dark.png" alt="Journey Guidance" loading="lazy">
+                    <h3>Total Journey<br>Guidance</h3>
+                    <ul>
+                        <li>AAAA-certified attorneys</li>
+                        <li>Licensed home study providers</li>
+                        <li>Financial advisors</li>
+                    </ul>
+                </div>
+                
+                <div class="guidance-item">
+                    <img src="assets/education-resources-moms-adoption-variant-dark.png" alt="Education Resources" loading="lazy">
+                    <h3>Education &<br>Resources</h3>
+                    <ul>
+                        <li>Comprehensive adoption education</li>
+                        <li>Process guidance materials</li>
+                        <li>Decision support tools</li>
+                    </ul>
+                </div>
+                
+                <div class="guidance-item">
+                    <img src="assets/complete-service-coverage-moms-adoption-variant-dark.png" alt="Service Coverage" loading="lazy">
+                    <h3>Complete Service<br>Coverage</h3>
+                    <ul>
+                        <li>Clear process provided</li>
+                        <li>Transparent process</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <a href="#adoption-form" class="btn">Start Your Adoption Application</a>
+        </div>
+    </section>
+
+    <!-- Success Statistics -->
+    <section class="success-section">
+        <div class="container">
+            <div class="success-content">
+                <div class="success-text">
+                    <h2>2,800+ Families Created. Yours<br>Will be Next</h2>
+                    <p>Experience you can trust, with the support you deserve</p>
+                </div>
+                
+                <div class="success-stats">
+                    <div class="success-stat">
+                        <h3>92%</h3>
+                        <p>Success Rate Within 24 months</p>
+                    </div>
+                    <div class="success-stat">
+                        <h3>13-16</h3>
+                        <p>Average Months to Families</p>
+                    </div>
+                    <div class="success-stat">
+                        <h3>2,800+</h3>
+                        <p>Angel Families Created</p>
+                    </div>
+                    <div class="success-stat">
+                        <h3>100+</h3>
+                        <p>Angel Professional Partners</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Testimonials -->
+            <div class="testimonials">
+                <div class="testimonial">
+                    <blockquote>"The emotional support was incredible. My coordinator was there day and night, guiding me through every step. Having someone who truly understood my journey made all the difference."</blockquote>
+                    <div class="testimonial-author">
+                        <img src="assets/testimonial-image-1-moms-adoption-variant-dark.png" alt="Sarah M." loading="lazy">
+                        <div>
+                            <strong>Sarah M.</strong>
+                            <span>Mother through Adoption, Teacher</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial">
+                    <blockquote>"Their ethical approach gave me complete peace of mind. Everything was transparent, and I knew I was working with people who truly cared about creating families the right way."</blockquote>
+                    <div class="testimonial-author">
+                        <img src="assets/testimonial-image-2-moms-adoption-variant-dark.png" alt="Jennifer K." loading="lazy">
+                        <div>
+                            <strong>Jennifer K.</strong>
+                            <span>Mother through Adoption, Nurse</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial">
+                    <blockquote>"The community of other adoptive mothers they connected me with has been invaluable. Two years later, we're still close friends and our children have playdates together."</blockquote>
+                    <div class="testimonial-author">
+                        <img src="assets/testimonial-image-3-moms-adoption-variant-dark.png" alt="Michelle R." loading="lazy">
+                        <div>
+                            <strong>Michelle R.</strong>
+                            <span>Mother through Adoption, Marketing Director</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <a href="#adoption-form" class="btn">Start Your Adoption Application</a>
+        </div>
+    </section>
+
+    <!-- Recent Adoptions -->
+    <section class="recent-adoptions">
+        <div class="container">
+            <h2>Recent Infant Adoptions</h2>
+            <div class="adoptions-grid">
+                <div class="adoption-item">
+                    <img src="assets/infant-adoptions-image-1-moms-adoption-variant-dark.png" alt="Baby Alejandro" loading="lazy">
+                    <div class="adoption-overlay">
+                        <img src="assets/infant-adoptions-heart-image-moms-adoption-variant-dark.png" alt="Heart" class="heart-icon">
+                    </div>
+                    <h3>Baby Boy</h3>
+                    <h4>Alejandro</h4>
+                    <p>Congrats Randi & Steven</p>
+                </div>
+                
+                <div class="adoption-item">
+                    <img src="assets/infant-adoptions-image-2-moms-adoption-variant-dark.png" alt="Baby Birdie" loading="lazy">
+                    <div class="adoption-overlay">
+                        <img src="assets/infant-adoptions-heart-image-moms-adoption-variant-dark.png" alt="Heart" class="heart-icon">
+                    </div>
+                    <h3>Baby Girl</h3>
+                    <h4>Birdie</h4>
+                    <p>Congrats Molly & Ashlee</p>
+                </div>
+                
+                <div class="adoption-item">
+                    <img src="assets/infant-adoptions-image-3-moms-adoption-variant-dark.png" alt="Baby Luka Hunter" loading="lazy">
+                    <div class="adoption-overlay">
+                        <img src="assets/infant-adoptions-heart-image-moms-adoption-variant-dark.png" alt="Heart" class="heart-icon">
+                    </div>
+                    <h3>Baby Boy</h3>
+                    <h4>Luka Hunter</h4>
+                    <p>Congrats Katie</p>
+                </div>
+                
+                <div class="adoption-item">
+                    <img src="assets/infant-adoptions-image-4-moms-adoption-variant-dark.png" alt="Baby Wylie Layne" loading="lazy">
+                    <div class="adoption-overlay">
+                        <img src="assets/infant-adoptions-heart-image-moms-adoption-variant-dark.png" alt="Heart" class="heart-icon">
+                    </div>
+                    <h3>Baby Boy</h3>
+                    <h4>Wylie Layne</h4>
+                    <p>Congrats Layna & Craig</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Load remaining content via JavaScript for better performance -->
+    <div id="deferred-content"></div>
+
+    <!-- Scripts -->
+    <script>
+        // Load non-critical content after page load
+        window.addEventListener('load', function() {
+            // Load remaining sections
+            loadDeferredContent();
+            
+            // Initialize smooth scrolling
+            initSmoothScrolling();
+            
+            // Initialize form validation
+            initFormValidation();
+        });
+        
+        function loadDeferredContent() {
+            // This would load the remaining sections (birth mother support, pricing, FAQ, form)
+            // Implementation would fetch and insert the remaining HTML
+        }
+        
+        function initSmoothScrolling() {
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+        }
+        
+        function initFormValidation() {
+            // Form validation logic would go here
+        }
+    </script>
+    
+    <!-- Load remaining CSS after critical content -->
+    <link rel="stylesheet" href="consolidated-buttons.css">
+</body>
+</html>

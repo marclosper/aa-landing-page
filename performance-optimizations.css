@@ -1,0 +1,78 @@
+/* PERFORMANCE OPTIMIZATIONS */
+
+/* Critical CSS - Above the fold content */
+/* This should be inlined in the HTML head for fastest loading */
+
+/* Font Loading Strategy */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap; /* Prevents invisible text during font load */
+    src: url(https://fonts.gstatic.com/s/opensans/v43/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4gaVc.ttf) format('truetype');
+}
+
+/* Preload critical fonts in HTML head:
+<link rel="preload" href="https://fonts.gstatic.com/s/opensans/v43/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4gaVc.ttf" as="font" type="font/truetype" crossorigin>
+*/
+
+/* CSS Containment for better performance */
+.main_banner {
+    contain: layout style paint;
+}
+
+.sppb-section {
+    contain: layout style;
+}
+
+/* GPU Acceleration for animations */
+.btn, .sppb-btn {
+    will-change: transform;
+    transform: translateZ(0); /* Force GPU layer */
+}
+
+/* Optimize images */
+.sppb-img-responsive {
+    max-width: 100%;
+    height: auto;
+    loading: lazy;
+    decoding: async;
+}
+
+/* Reduce layout shifts */
+.banner_image img {
+    aspect-ratio: 703 / 647; /* Maintain aspect ratio */
+    object-fit: cover;
+}
+
+/* Optimize animations */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* Critical path CSS - inline this in HTML head */
+.header {
+    background: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+}
+
+.main_banner {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+/* Defer non-critical CSS */
+/* Load this CSS after page load:
+<link rel="preload" href="styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="styles.css"></noscript>
+*/

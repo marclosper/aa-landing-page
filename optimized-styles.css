@@ -1,0 +1,292 @@
+/* OPTIMIZED CSS - Consolidated and Minified */
+
+/* CSS Variables for consistent theming */
+:root {
+    --primary-pink: #df4c92;
+    --primary-pink-hover: #d22678;
+    --primary-pink-active: #b42067;
+    --primary-blue: #1556cc;
+    --primary-blue-hover: #10439e;
+    --primary-blue-active: #0d357d;
+    --text-dark: #57343b;
+    --text-light: #fff;
+    --border-light: #e8b4b8;
+    --shadow-color: rgba(232, 180, 184, 0.4);
+    --font-primary: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-heading: 'Oswald', sans-serif;
+    --font-script: 'Sacramento', cursive;
+}
+
+/* Font Loading Optimization - Preload critical fonts */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/opensans/v43/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4gaVc.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/opensans/v43/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4gaVc.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/oswald/v56/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUZiYA.ttf) format('truetype');
+}
+
+/* Base Styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-primary);
+    line-height: 1.6;
+    color: var(--text-dark);
+    margin: 0;
+    padding: 0;
+}
+
+/* Button Base Styles - Consolidated */
+.btn, .sppb-btn, .sppb-btn-custom {
+    display: inline-block;
+    font-family: var(--font-primary);
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    user-select: none;
+}
+
+/* Primary Button Styles */
+.btn-pink, .cta_btn {
+    background-color: var(--primary-pink);
+    color: var(--text-light);
+    font-size: 24px;
+    padding: 20px 60px;
+    box-shadow: 0 12px 9px var(--shadow-color);
+}
+
+.btn-pink:hover, .cta_btn:hover {
+    background-color: var(--primary-pink-hover);
+    transform: translateY(-2px);
+}
+
+.btn-pink:active, .cta_btn:active {
+    background-color: var(--primary-pink-active);
+    transform: translateY(0);
+}
+
+/* Header Button */
+.header_btn {
+    background-color: transparent;
+    color: var(--text-light);
+    border: 1px solid var(--border-light);
+    font-size: 20px;
+    padding: 14px 24px;
+    box-shadow: 0 12px 9px var(--shadow-color);
+}
+
+.header_btn:hover {
+    background-color: var(--primary-pink-hover);
+    color: var(--text-light);
+}
+
+/* Layout Styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.col-sm-12 {
+    flex: 0 0 100%;
+    padding: 0 15px;
+}
+
+/* Header Styles */
+.header {
+    background: #fff;
+    padding: 15px 0;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+.brand img {
+    max-width: 186px;
+    height: auto;
+    transition: all 0.25s ease;
+}
+
+/* Navigation Styles - Simplified */
+.navigation .nav.menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navigation .nav.menu li {
+    margin: 0 3px;
+}
+
+.navigation .nav.menu li a {
+    display: block;
+    padding: 12px 15px;
+    color: var(--text-dark);
+    text-decoration: none;
+    border-radius: 10px 10px 0 0;
+    transition: all 0.3s ease;
+}
+
+.navigation .nav.menu li a:hover {
+    background-color: var(--primary-pink);
+    color: var(--text-light);
+}
+
+/* Section Styles */
+.main_banner {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+    color: var(--text-light);
+    padding: 80px 0;
+    text-align: center;
+}
+
+.sppb-addon-title {
+    font-family: var(--font-heading);
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.sppb-addon-title h1 {
+    font-size: 3.5rem;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.sppb-addon-title h2 {
+    font-size: 2.5rem;
+    line-height: 1.3;
+    margin: 0;
+}
+
+.sppb-addon-title h3 {
+    font-size: 2rem;
+    line-height: 1.4;
+    margin: 0;
+}
+
+/* Statistics Section */
+.banner_imgbox {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 40px 0;
+}
+
+.banner_imgbox .sppb-column {
+    text-align: center;
+    padding: 20px;
+}
+
+.banner_imgbox img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+/* Form Styles */
+.form-control {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: var(--primary-pink);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(223, 76, 146, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sppb-addon-title h1 {
+        font-size: 2.5rem;
+    }
+    
+    .btn-pink, .cta_btn {
+        font-size: 20px;
+        padding: 18px 48px;
+    }
+    
+    .header_btn {
+        font-size: 18px;
+        padding: 16px 32px;
+    }
+    
+    .navigation .nav.menu {
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 250px;
+        height: 100vh;
+        background: var(--primary-pink);
+        transition: left 0.3s ease;
+        z-index: 10000;
+    }
+    
+    .navigation .nav.menu.active {
+        left: 0;
+    }
+    
+    .navigation .nav.menu li a {
+        color: var(--text-light);
+        border-radius: 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+}
+
+/* Performance Optimizations */
+.sppb-img-responsive {
+    max-width: 100%;
+    height: auto;
+    loading: lazy;
+}
+
+/* Reduce paint and layout thrashing */
+.sppb-element-lazy {
+    will-change: transform;
+}
+
+/* Critical above-the-fold styles */
+.main_banner,
+.header,
+.banner_imgbox {
+    contain: layout style paint;
+}
