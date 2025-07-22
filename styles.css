@@ -131,6 +131,9 @@ only screen and (min-resolution:2dppx) {
 html {
   scroll-behavior: smooth;
 }
+
+img {  width: auto;  height: auto;  max-width: 100%;}
+
 .btn {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
